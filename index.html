@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+     *{
+       margin: 0;
+       padding: 0;
+       }
+       body{
+        background:linear-gradient(rgb(191, 133, 233),white);
+       }
+     .navbar{
+        height: 100px;
+        width: 99vw;
+        background-color:#370437;
+        display: flex;
+     } 
+     .left_nav{
+        font-size: 30px;
+        color:#f2bef2;
+        margin:20px 0 0 40px;
+     }    
+     .right_now{
+        display: flex;
+        margin-top: 30px;
+        margin-left: 300px;
+     }
+     #Nav{
+        margin: 10px 10px 10px 20px;
+     }
+     a{
+       font-size: 25px;
+       text-decoration: none;
+       color:wheat;
+     }
+     a:hover{
+         color:crimson;
+         transition: 1s;
+     }
+     #BTN{
+        padding: 10px 20px;
+        color: violet;
+        background-color:rgb(180, 67, 236);
+        border: none;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: -40;
+        font-size: 20px;
+        cursor: pointer;
+        max-height:50px ;
+     }
+     #BTN:hover{
+        box-shadow: 2px 1px 1px 2px rgb(59, 56, 56);
+        color: orangered;
+     }
+     .home_page{
+        height: 660px;
+        width: 100vw;
+        display: flex;
+     }
+     .left_home{
+          height: 400px;
+          width: 750px;
+          margin: 200px 0  0 60px;
+     }
+     #heading{
+        font-size: 70px;
+        color: orangered;
+       
+     }
+     #para_1{
+        font-size: 20px;
+        margin-left: 10px 0 0 60px;
+        color: wheat;
+     }
+     .img2{
+        height: 620px;
+        width: 600px;
+       margin-top: 20px;
+       border-radius: 50%;
+       cursor: pointer;
+     }
+     .second{
+        margin: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;   
+      }
+     .box1{
+        height: 470px;
+        width: 420px;
+        margin: 20px;
+        box-shadow: 0 0 20px 2px rgb(213, 136, 136);
+        border-radius: 10px;
+     }
+     .box1:hover{
+        background-color: rgb(158, 16, 158);
+     }
+     #user{
+        height: 200px;
+        width: 200px;
+        margin: 20px 0 0 50px;
+     }
+     #services_para{
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 20px;
+     }
+     #services_para1{
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 20px;
+     }
+     .img1{
+      
+      height: 400px;
+     }
+     .text{
+      display:inline-block;
+     }
+     #title{
+      margin-left: 20px;
+      font-size: 25px;
+      font-family: "Dancing Script", cursive;
+      color: orangered;
+     }
+    #title1{
+      text-align: center;
+      font-size: 45px;
+      font-family: "Dancing Script", cursive;
+      color: orangered;
+    }
+    .subhead{
+      font-size: 35px;
+      color: #0d0d0d;
+      text-align: center;
+    }
+    .about{
+      display: flex;
+      margin: 80px 20px 20px 60px;
+    }
+    .menu_sub{
+      height: 80px;
+      width: 650px;
+      display: flex;
+     margin: 40px 0 0 70px;
+    }
+    
+    .box3{
+      height: 447px;
+      width: 800px;
+      border: 2px solid black;
+      background-color:#370437;
+      text-align: center;
+    }
+    .subhead1{
+      font-size: 35px;
+      margin-left: 30px;
+      color: white;
+    }
+    .form{
+      padding: 20px;
+      margin-left: 30px;
+      border-radius: 5px;
+    }
+    .form1{
+      padding: 20px;
+      margin-top: 30px;
+      margin-left: 30px;
+      border-radius: 5px;
+    }
+    .form2{
+      padding: 10px;
+      margin-top: 30px;
+      margin-left: 30px;
+      border-radius: 5px;
+      width: 450px;
+    }
+    #BTN1{
+        padding: 10px 40px;
+        color: violet;
+        background-color:rgb(180, 67, 236);
+        border: none;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: -40;
+        font-size: 20px;
+        cursor: pointer;
+        max-height:50px ;
+        margin-top: 20px;
+    }
+    #BTN1:hover{
+      box-shadow: 2px 1px 1px 2px rgb(59, 56, 56);
+      color: orangered;
+    }
+    .circle{
+      height: 450px;
+      width: 300px;
+      background-color: white;
+      margin: 40px 30px;
+      text-align: center;
+      box-shadow: 0 0 20px 2px rgb(188, 184, 184);
+      border-radius: 10px;
+     }
+    .subhead_2{
+      font-size: 20px;
+      color: #0d0d0d;
+     }
+    #who{
+      font-size: 20px;
+      margin: 20px;
+     }
+    .social{
+      height: 30px;
+      width: 30px;
+      padding: 10px;
+      background-color: orange;
+      border-radius: 50%;
+     }
+    .CONTACT{
+      height: 400px;
+      width: 1550px;
+      background-color:#090312;
+     }
+   .box_info1{
+      height: 300px;
+      width: 300px;
+      margin-left: 70px;
+      margin-top: 30px;
+      display:inline-block;
+      }
+    .details{
+      font-size: 35px;
+      font-family: "Dancing Script", cursive;
+      color: orangered;
+     }
+     #info{
+      color: white;
+      font-size: 20px;
+      margin-left: 40px;
+      padding: 5px;
+      }
+      .CONTACT{
+        display: flex;
+      }
+       #icons{
+         height: 30px;
+         width: 30px;
+         margin: 2px;
+      }
+      #media{
+         margin-top: 30px;
+         padding: 0;
+         height: 30px;
+         width: 30px;
+         border-radius: 50%;
+         margin-left: 30px; 
+      }
+      #day{
+         color: white;
+         font-size: 20px;
+         margin-left: 10px;
+         padding: 10px;
+      }
+      #time{
+         color: white;
+         font-size: 20px;
+         margin-left: 30px;
+         padding: 1px;  
+      }
+       #news{
+          color: white;
+          font-size: 17px;
+          margin-left: 0px;
+          margin-top: 10px;
+          padding: 10px;
+      }    
+      #mail{
+         padding: 20px;
+         margin-top: 30px;
+         margin-left: 20px;
+         width: 210px;
+         border: none;
+         border-radius: 5px;
+      }
+      #BTN2{
+         padding: 6px;
+         color: white;
+         background-color:violet;
+         border-radius:5px;
+         font-size: 20px;
+         cursor: pointer;
+         margin-left:100px;  
+          margin-top: 20px; 
+          }
+
+          p{
+            font-size: 16px;
+            margin-left: 40px;
+          }
+          #value{
+            margin-left: 100px;
+            color: #1b071b;
+          }
+          #cart{
+            margin-left: 110px;
+            color: violet;
+            background-color: rgb(18, 3, 18);
+            padding: 10px;
+            border-radius: 5px;
+          }
+         #bold{
+            font-size: 20px;
+            font-weight: 900;
+            font-family: "Dancing Script", cursive;
+         }
+         .registration{
+         margin: 20px;
+         margin-left: 300px;
+         }
+         #cart1{
+            margin-left: 120px;
+            margin-top: 10px;
+         }    
+         #WEL{
+            font-size: 30px;
+            color: orangered;
+         } 
+         /* Mobile View */
+         @media (max-width: 768px){
+            .right_now{
+               align-items: center;
+               margin-top: 0;
+               margin-left:50px;
+            }
+            .left_nav{
+               font-size: 20px;
+               margin: 10px 0 0 0;
+            }
+            #BTN{
+               margin-left: 0;
+               font-size: 5px;
+            }
+            #cart1{
+               display: none;
+            }
+            a{
+               font-size: 15px;
+            }
+            .home_page{
+               margin: 0;
+               flex-wrap: wrap;
+            }
+            .second{
+               flex-wrap: wrap;
+            }
+            #left_home{
+               margin: 0;
+            }
+            #para_1{
+               display: none;
+            }
+            #BTN{
+               font-size: 30px;
+            }
+            .CONTACT{
+             display: flex;
+             flex-direction: column;
+           }
+           .about{
+           display: flex;
+           flex-direction: column;
+           margin: 80px 20px 20px 60px;
+        }
+   }
+
+</style>   
+</head>
+<body>
+   <div class="container_2">
+      <div class="navbar">
+          <div class="left_nav">
+             <span>🐕Pet Care<BR/>
+            <p>Your Pet Store</p></span>
+        </div>
+         <!-----------Nav bar------------->
+        <div class="right_now">
+            <p id="Nav"><a href="">HOME</a></p>
+            <p id="Nav"><a href="#ABOUT">ABOUT US</a></p>
+            <p id="Nav"><a href="#Our Products">OUR PRODUCTS</p></a>
+            <button id="BTN"><a href="#Book A Table">Sign Up</a></button>
+            <a href="#Our Products"><img src="./images/cart2.png" alt="" height="40px" width="40px" id="cart1"></a>
+        </div>
+    </div>
+    <!-------------------Home page--------------------->
+    <div class="home_page">
+        <div class="left_home">
+            <p id="heading"><b>Gut & Wellness<br>Products</b></p><br/>
+            <p id="para_1">For Healthier and happier furry friends,your pet deserve better gut and overall health.Give your pet a healthy gastroinetstional tract and help them live a longer life. <br/>you care about your pet's health .We do too!</p><br/>
+            <a href="#Book A Table"><button id="BTN">Shop Now</button></a>
+        </div>
+        <img src="./images/img1.png.jpg" alt="" class="img2">
+    </div>
+</div>
+<br/>
+    <!--------------------------Our Services------------------------------->
+    <h2 id="Our Products">
+ <p id="title1">___Our Products___</p></h2>
+<div class="second">
+    <div class="box1">
+        <img src="./images/img4.webp" alt="user" id="user">
+        <p id="services_para"><b id="bold">Pedigree PRO Expert Nutrition Lactating/Pregnant Mother & Puppy Starter (3 to 12 Weeks) Small Breed Dog Dry Food</b><br/>
+         <br/>
+      <b id="value">₹ 1,359</b></p>
+      <button id="cart">Add to Cart</button>
+        <p id="services_para1"></p>
+    </div>
+    <div class="box1">
+      <img src="./images/img5.webp" alt="user" id="user">
+      <p id="services_para"><b id="bold">Fidele Plus Adult Small & Medium Dog Dry Food</b><br/>
+       <br/>
+    <b id="value">₹ 7,335</b></p>
+    <button id="cart">Add to Cart</button>
+      <p id="services_para1"></p>
+  </div>
+  <div class="box1">
+   <img src="./images/img6.webp" alt="user" id="user">
+   <p id="services_para"><b id="bold">Chip Chops Chicken & Codfish Rolls Dog Meaty Treat - 70 gm</b><br/>
+    <br/>
+ <b id="value">₹ 195.00</b></p>
+ <button id="cart">Add to Cart</button>
+   <p id="services_para1"></p>
+</div>
+<div class="box1">
+   <img src="./images/img7.webp" alt="user" id="user">
+   <p id="services_para"><b id="bold">Pedigree Chicken & Milk Puppy Dry Food - 1 kg</b><br/>
+    <br/>
+ <b id="value">₹ 313</b></p>
+ <button id="cart">Add to Cart</button>
+   <p id="services_para1"></p>
+</div>
+</div>
+</div>
+   <!-----------------------About Us--------------------------->
+   
+<div class="about">
+   <div class="about_img_top">
+      <img src="./images/img2.jpg" alt="" class="img1">
+   </div>
+   <div class="text">
+      
+      <p id="title">Who we are</p>
+      <h2 id="ABOUT"><p id="WEL"><b>About Us</b></p></h2>
+          <p id="services_para1">Our goal is to provide a clean, pet friendly store that has everything that your dog or cat needs. While our store is not very large, we offer an experience that is fast, friendly, local, and less expensive that the "Big Box" pet stores. 
+          <p id="services_para1">Our doors opened for the first time on September 22, 2014 and we have been growing ever since. Thanks again for visiting our site and learning about our company! We will see you soon. </p>
+          <div class="para01">
+         <p class="experience"><b id="color"><img src="./images/img3.png" alt="" height="20px width"> </b> Formulate in USA<br/> <b></b><img src="./images/img3.png" alt="" height="20px width"></b> Free shipping<br/> </p> 
+         <p class="experience_1"><b id="color"><img src="./images/img3.png" alt="" height="20px width"> </b>High quality Ingredients<br><b id="color"><img src="./images/img3.png" alt="" height="20px width"> </b>3500 + star Review<br/> </p>
+         <br/>
+      </div>
+      <br/>
+      <button id="BTN">Read More</button></p>
+   </div>
+</div>
+</div>
+<div class="registration">
+<div class="box3">
+   <h2 id="Book A Table">
+<p id="title">___Register___</p></h2>
+<p class="subhead1"><b>Pet Store</b></p>
+<br/>
+<input type="Your Name" placeholder="Your Name" required class="form">
+<input type="Your Email" placeholder="Your Email" required class="form">
+<br/>
+<input type="Date & Time"  placeholder="Date & Time" required class="form1">
+<input type="NO. Of People" placeholder="No.of Pets"required class="form1">
+<br/>
+<textarea name="Special Reuest" id="msg" placeholder="Special Request" class="form2"></textarea><br/>
+<button  id="BTN1">Book Now</button>
+</div>
+</div>
+</div>
+    <!---------------------footer page----------------------------->
+<footer>
+   <span id="CONTACT">
+      <div class="CONTACT"></span>
+         <div class="box_info">
+            <div class="box_info1">
+         <span class="details">Quick Links_</span>
+         <ul id="list">
+         <a href="./index.html"> <li id="info">Home </li></a>
+         <a href="#Our Products">  <li id="info">Our Products</li></a>
+         <a href="#ABOUT"><li id="info">About Us</li></a>  
+         </ul>
+            </div>
+         </div>
+         <div class="box_info">
+            <div class="box_info1">
+         <span class="details">Contact__</span>
+         <p id="info">
+            <img src="./images/facebook.png" id="icons" ><span >123 Street,New York,USA</span><br/>
+            <img src="./images/phone-call.png" id="icons" ><span>+012 345 67890</span><br/>
+            <img src="./images/mail.png" id="icons"><span>petstore@gmail.com</span>
+         </p>
+         <p>
+         <img src="./images/facebook.png" id="media" >
+         <img src="./images/insta.png" id="media">
+         <img src="./images/twitter .png"id="media" >
+         <img src="./images/social.png"id="media">
+      </p>
+         </div>
+         </div>
+         <div class="box_info">
+         <div class="box_info1">
+         <span class="details">Opening__</span>
+         <P id="day"><b>Monday - Saturday</b></P>
+         <p id="time">09AM - 09PM</p>
+         <p id="day"><b>Sunday</b></p>
+         <p id="time">10AM - 08PM</p>
+         </div>
+         </div>
+         <div class="box_info">
+         <div class="box_info1">
+         <span class="details">Newsletter__</span>
+         <P id="news">We have partnered with the top pet newsletters out there, from those that focus on dogs and cats, to those geared towards fish and reptile owners. Scroll down to explore our pet offerings.</P>
+         <input type="text" placeholder="Your Mail" id="mail">
+         <button id="BTN2">SIGNUP</button>
+      </div>
+         </div>
+         
+      </div>
+   </div>
+</footer>
+</body>
+</html>
